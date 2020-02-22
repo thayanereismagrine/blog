@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Blog</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-sm-4-">
+                    <h1>Blog</h1>
+
+                </div>
+
+                <div class="col-12 col-sm-8">
+
+
+
+
+
+                    <nav>
+
+                        <a href="">Home</a>
+                        <a href="">Categorias</a>
+                        <a href="">Postagens</a>
+                        <a href="">Sobre</a>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div style="background:#808080;height:200px;"></div>
+
+        </div>
+
+    </header>
+
+
+
+    <main style="padding-top:20px;">
+        <div class="container">
+
+            @RenderBody()
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        Rodapé
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title"> Título</h5>
+        <p class="card-text">Texto Resumido</p>
+        <a href="#" class="btn-primary">Continue lendo</a>
+    </div>
+</div>
+
